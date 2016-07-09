@@ -35,7 +35,13 @@ shinyUI(fluidPage(
     mainPanel(
       plotOutput("stockPlot"),
       textOutput("invesment"),
-      textOutput("stockSalePrice")
+      textOutput("stockSalePrice"),
+      p("The application shows how high the stock prize needs to climb in
+        in order one to gian the expected return given. The stock prices
+        are read from yahoo website. Transaction cost is taken into account
+        as it might be a big factor on small investors. This application
+        helps small investors to understand how much the stock price needs 
+        to climb in order to make a expected profit.")
     )
   )
 ))
